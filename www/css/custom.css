@@ -32,21 +32,6 @@ body {
  font-size:large;
 }	
 	
-#SecurityCodeDialog {
- max-width: 400px;
- background-color:#cce5ff;
- border: 1px solid #80bfff;
- }	
- #SecurityCodeDialog  a.ui-btn{
- border: 1px solid #80bfff;
- }	
-#SecurityAlert {
- text-align:center;
- vertical-align:middle;		 
- color:DarkBlue;
- font-weight:bold;
- font-size:large;
-}
 #Version {
  position:absolute;
  /* top:0;  right:0;*/
@@ -79,7 +64,7 @@ margin:0px;
 #Directions {
  margin-top:0px;
  margin-bottom:12px;
- padding-top:10px;
+ padding-top:16px;
  padding-left:6px;
  padding-right:6px;
  text-align:center;

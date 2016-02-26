@@ -72,8 +72,7 @@ var scanProximity = function () {
 	var securityCode = $("#Code").val();
 	
 		// Compose the data feed URL
-		var URL = 'http://proximityscanner.com/Functions.svc/CheckProximity' +
-        '?Code=' + securityCode +
+		var URL = 'http://proximityscanner.com/Functions.svc/Scan' +
         '&Latitude=' + latitude + 
         '&Longitude=' + longitude + 
         '&Timestamp=' + Date.now();			
@@ -186,10 +185,7 @@ var showScanResponse = function () {
 			if (status=="Invalid Security Code.") { 
 				$("#Security").css("visibility","visible"); 
 				$("#SecurityCodeDialog").popup("open")
-			 } else {
-				$("#Security").css("visibility","hidden");
-				$("#Security").css("height","50px");
-			 }
+			 } 
 
 }
 
