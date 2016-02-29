@@ -73,7 +73,7 @@ var scanProximity = function () {
 	
 		// Compose the data feed URL
 		var URL = 'http://proximityscanner.com/Functions.svc/Scan' +
-        '&Latitude=' + latitude + 
+        '?Latitude=' + latitude + 
         '&Longitude=' + longitude + 
         '&Timestamp=' + Date.now();			
 
