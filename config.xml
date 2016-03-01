@@ -2,7 +2,7 @@
   <name>Proximity Scanner</name>
   <description>Scan For the Nearest Hazardous Site</description>
   <author href="http://ProximityScanner.com" email="support@ProximityScanner.com">CH2M</author>
-  <content src="www/index.html"/>
+  <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
   <preference name="target-device" value="universal"/>
