@@ -72,7 +72,7 @@ var scanProximity = function () {
 	var securityCode = $("#Code").val();
 	
 		// Compose the data feed URL
-		var URL = 'http://proximityscanner.com/Functions.svc/Scan' +
+	    var URL = 'https://pge.proximityscanner.com/Functions.svc/Scan' +		
         '?Latitude=' + latitude + 
         '&Longitude=' + longitude + 
         '&Timestamp=' + Date.now();			
@@ -132,35 +132,35 @@ var showScanResponse = function () {
 						
 			// Set the button image, Yes/NO response, response text, and status
 			if (zone==5) { 
-			 $("#Response").html("NO"); 
+			 if ( (typeof someVar === 'undefined') || response==null) { $("#Response").html("Ok to Discharge");} else { $("#Response").html(response); }
 			 $("#Response").css("background-color","#508a55");	
 			 $("#Button").removeClass("Z0").removeClass("Z1").removeClass("Z2").removeClass("Z3").removeClass("Z4").addClass("Z5").removeClass("ZM1");		
 			if (message==null) { $("#ResponseDescription").html("There is not a Cortese site within 200 feet of your location.  The nearest Cortese site is over a mile away.");} else { $("#ResponseDescription").html(message); }
 			if (status==null) { $("#Status").html("Scan Completed.");} else { $("#Status").html(status); }				 
 			}
 			else if (zone==4) {
-			 $("#Response").html("NO"); 
+			 if ( (typeof someVar === 'undefined') || response==null) { $("#Response").html("Ok to Discharge");} else { $("#Response").html(response); }
 			 $("#Response").css("background-color","#87b388");		
 			 $("#Button").removeClass("Z0").removeClass("Z1").removeClass("Z2").removeClass("Z3").addClass("Z4").removeClass("Z5").removeClass("ZM1");
 			 if (message==null) { $("#ResponseDescription").html("There is not a Cortese site within 200 feet of your location.  The nearest Cortese site is between 1000 feet and one mile from your location.");} else { $("#ResponseDescription").html(message); }
 			 if (status==null) { $("#Status").html("Scan Completed.");} else { $("#Status").html(status); }		
 			}
 			else if (zone==3) {
-			 $("#Response").html("NO"); 
+			 if ( (typeof someVar === 'undefined') || response==null) { $("#Response").html("Ok to Discharge");} else { $("#Response").html(response); }
 			 $("#Response").css("background-color","#87b388");
 			 $("#Button").removeClass("Z0").removeClass("Z1").removeClass("Z2").addClass("Z3").removeClass("Z4").removeClass("Z5").removeClass("ZM1");		
 			 if (message==null) { $("#ResponseDescription").html("There is not a Cortese site within 200 feet of your location.  The nearest Cortese site is between 500 and 1000 feet from your location.");} else { $("#ResponseDescription").html(message); }
 			 if (status==null) { $("#Status").html("Scan Completed.");} else { $("#Status").html(status); }						 
 			}
 			else if (zone==2) {
-			 $("#Response").html("NO"); 
+			 if ( (typeof someVar === 'undefined') || response==null) { $("#Response").html("Ok to Discharge");} else { $("#Response").html(response); }
 			 $("#Response").css("background-color","#87b388");
 			 $("#Button").removeClass("Z0").removeClass("Z1").addClass("Z2").removeClass("Z3").removeClass("Z4").removeClass("Z5").removeClass("ZM1");				
 			 if (message==null) { $("#ResponseDescription").html("There is not a Cortese site within 200 feet of your location.  The nearest Cortese site is between 200 and 500 feet from your location.");} else { $("#ResponseDescription").html(message); }
 			 if (status==null) { $("#Status").html("Scan Completed.");} else { $("#Status").html(status); }		
 			}
 			else if (zone==1) {
-			 $("#Response").html("YES"); 
+			 if ( (typeof someVar === 'undefined') || response==null) { $("#Response").html("Do Not Discharge");} else { $("#Response").html(response); }
 			 $("#Response").css("background-color","red");
 			 $("#Button").removeClass("Z0").addClass("Z1").removeClass("Z2").removeClass("Z3").removeClass("Z4").removeClass("Z5").removeClass("ZM1");	
 			 if (message==null) { $("#ResponseDescription").html("There is a Cortese site within 200 feet of your location.");} else { $("#ResponseDescription").html(message); }
