@@ -36,7 +36,7 @@
   <gap:plugin name="org.apache.cordova.file-transfer"/>
   <gap:plugin name="org.apache.cordova.geolocation"/>
   -->
-  <plugin name="org.apache.cordova.geolocation" source="pgb" spec="0.3.12" />
+  <plugin name="org.apache.cordova.geolocation"/>
   <!-- 
   <gap:plugin name="org.apache.cordova.globalization"/>
   <gap:plugin name="org.apache.cordova.inappbrowser"/>
