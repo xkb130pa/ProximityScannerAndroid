@@ -24,10 +24,9 @@
   <gap:plugin name="org.apache.cordova.media-capture"/>
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.contacts"/>  
-   <gap:plugin name="org.apache.cordova.device"/>
-   -->
-  <plugin name="org.apache.cordova.device" source="pgb"  />
-
+  <gap:plugin name="org.apache.cordova.device"/>
+  -->
+   <gap:plugin name="org.apache.cordova.device" />
   <!--
   <gap:plugin name="org.apache.cordova.device-motion"/>
   <gap:plugin name="org.apache.cordova.device-orientation"/>
@@ -36,7 +35,7 @@
   <gap:plugin name="org.apache.cordova.file-transfer"/>
   <gap:plugin name="org.apache.cordova.geolocation"/>
   -->
-  <plugin name="org.apache.cordova.geolocation" source="pgb"  />
+   <gap:plugin name="org.apache.cordova.geolocation" />
   <!-- 
   <gap:plugin name="org.apache.cordova.globalization"/>
   <gap:plugin name="org.apache.cordova.inappbrowser"/>
@@ -80,7 +79,7 @@
   <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
 
   <access origin="*"/>
-  <plugin name="cordova-plugin-whitelist" spec="1.3.0" />
+  <plugin name="cordova-plugin-whitelist" source="npm" />
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
