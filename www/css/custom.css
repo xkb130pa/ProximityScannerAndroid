@@ -122,6 +122,15 @@ span {
  font-size:medium;
  visibility:hidden;
 }
+
+#Region {
+ position:relative;
+ padding-top:4px;
+ text-align:center;
+ vertical-align:top;
+ width:100%;
+ font-weight:bold;
+}
 		
 #ResponseBlock {
  width:100%;
