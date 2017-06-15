@@ -84,6 +84,8 @@ var scanProximity = function () {
 				distance = data.Distance;
 				site = data.Site;
 				zone=data.Zone;
+				regionId=data.RegionId;
+				regionName=data.RegionName;					
 				disclaimer = data.Disclaimer;
 				status = data.Status;
 				timestamp = new Date();
@@ -179,6 +181,13 @@ var showScanResponse = function () {
 			 $("#Button").addClass("Z0").removeClass("Z1").removeClass("Z2").removeClass("Z3").removeClass("Z4").removeClass("Z5").removeClass("ZM1");			
 			 if (status==null) { $("#Status").html("Scan Completed.");} else { $("#Status").html(status); }						 
 			}
+			
+			if (regionId!=null)  {
+			 $("#Region").css("visibility","visible").html("<br> Region " + regionId + " - " + regionName); 
+			} else {
+			 $("#Region").css("visibility","hidden").html("");
+			}
+			
 			$("#ResponseTime").html("Last Checked " + responsetime); 
 			
 		 	// Hide the security code since it only needs to be entered once
