@@ -175,17 +175,17 @@ var showScanResponse = function () {
 			 if (message!=null) { $("#ResponseDescription").html("Discharges of vault water to land within this RWQCB region are not authorized at this time.");} else { $("#ResponseDescription").html(message); }
 			 if (status==null) { $("#Status").html("Scan Completed.");} else { $("#Status").html(status); }	
 			}			
-			else{
+			else {
 			 $("#ResponseBlock").css("visibility","hidden");
 			 if (message==null) { $("#ResponseDescription").html("");} else { $("#ResponseDescription").html(message); }			 
 			 $("#Button").addClass("Z0").removeClass("Z1").removeClass("Z2").removeClass("Z3").removeClass("Z4").removeClass("Z5").removeClass("ZM1");			
 			 if (status==null) { $("#Status").html("Scan Completed.");} else { $("#Status").html(status); }						 
 			}
 			
-			if (regionId!=null)  {
-			 $("#Region").css("visibility","visible").html("<br> Region " + regionId + " - " + regionName); 
+			if (regionId==1 || regionId==2 || regionId==3 || regionId==5 || regionId==6)  {
+			 $("#Region").html("Region " + regionId + " - " + regionName); 
 			} else {
-			 $("#Region").css("visibility","hidden").html("");
+			 $("#Region").html("Your location is outside the area PG&E is allowed to discharge vault water.");
 			}
 			
 			$("#ResponseTime").html("Last Checked " + responsetime); 
