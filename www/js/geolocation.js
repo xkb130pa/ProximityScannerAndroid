@@ -184,8 +184,11 @@ var showScanResponse = function () {
 			
 			if (regionId==1 || regionId==2 || regionId==3 || regionId==5 || regionId==6)  {
 			 $("#Region").html("Region " + regionId + " - " + regionName); 
+ 			 $("#Icon").css("display","block");
 			} else {
 			 $("#Region").html("Your location is outside the area PG&E is allowed to discharge vault water.");
+ 			 $("#ResponseBlock").css("visibility","hidden");
+			 $("#Icon").css("display","none");
 			}
 			
 			$("#ResponseTime").html("Last Checked " + responsetime); 
